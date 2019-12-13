@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuanLyAcityvity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Lớp:"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="237dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fe0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="85dp"
+        android:text="Tên sinh viên: "
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editten"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="137dp"
+        android:text="Ngày sinh:"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editngaysinh"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="125dp"
+        android:inputType="datetime" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:orientation="vertical">
+
+        <Button
+            android:onClick="Open"
+            android:id="@+id/btthemsinhvien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:inputType="textUri"
+            android:text="Thêm Sinh viên" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp">
+
+
+    </ListView>
+</RelativeLayout>
